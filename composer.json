@@ -1,0 +1,18 @@
+{
+    "name": "damian/netshowinterview",
+    "description": "this is a interview test",
+    "license": "MIT",
+    "autoload": {
+        "psr-4" : {
+            "Source\\" : "source/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dan9903",
+            "email": "mnssd2@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
