@@ -10,9 +10,9 @@ Nome
 
 ## A criação dessa página deve obedecer os seguintes requisitos:
 
-[]Os dados enviados deverão ser armazenados em um banco de dados e conter, além das informações exibidas,
-[x]o ip do remetente e
-[]a data e hora do envio.
+[x]Os dados enviados deverão ser armazenados em um banco de dados e conter, além das informações exibidas,
+[x] o ip do remetente e <ver como o php se comporta com isso aqui>
+[x] a data e hora do envio.
 
 Os dados informados devem ser validados utilizando as seguintes regras:
 
@@ -23,7 +23,7 @@ Todos os campos são obrigatórios;
   [] e só deve ser aceito se o arquivo for pdf, doc, docx, odt ou txt;
   [] O arquivo enviado deve ser armazenado em disco. Apenas o caminho do arquivo deve ser armazenado no banco de dados.
 
-[] Uma mensagem deve ser enviada com as informações submetidas no formulário para um e-mail definido em um arquivo de configuração.
+[] Uma mensagem deve ser enviada com as informações submetidas no formulário para um e-mail definido em um arquivo de configuração. //PHP MAILER.
 
 [] Testes automatizados devem ser escritos para garantir que a página funciona como esperado.
 
@@ -49,3 +49,6 @@ Em ambos os envios, crie um arquivo chamado README.md com instruções de config
  
   https://www.codexworld.com/how-to/get-user-ip-address-php/
 	https://www.devmedia.com.br/teste-unitario-com-phpunit/41231
+  https://www.positronx.io/create-simple-php-crud-rest-api-with-mysql-php-pdo/
+  https://phpunit.readthedocs.io/pt_BR/latest/installation.html
+  https://phpunit.de/getting-started/phpunit-9.html

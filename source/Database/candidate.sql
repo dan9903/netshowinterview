@@ -5,7 +5,7 @@
 # 
 # ************************************************************
 
-USE NetshowMeInterview;
+USE netshowinterview;
 
 DROP TABLE IF EXISTS `candidates`;
 
@@ -16,8 +16,7 @@ CREATE TABLE `candidates` (
   `phone` varchar(11) DEFAULT NULL,
   `message` varchar(255) DEFAULT NULL,
   `document` varchar(255) DEFAULT NULL,
-  `ip_addr` varchar(20) DEFAULT NULL,
-  `created_at` timestamp DEFAULT NOW,
+  `ipAddress` varchar(20) DEFAULT NULL,
+  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
