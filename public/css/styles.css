@@ -1,0 +1,35 @@
+:root {
+  --main-bg-color: #edf0f5;
+}
+
+.max-width {
+  max-width: 1024px;
+  width: 100%;
+}
+
+.center-screen{
+  margin: 0 auto;
+}
+
+.bg-white{
+  background-color: #FFFFFF;
+}
+
+.padding{
+  padding: 10px;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: 'ubuntu', sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+.form-control {
+  font-size: 12pt;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
