@@ -3,3 +3,4 @@ mariaLocal.session.sql
 .vscode
 test.http
 storage
+source/functions/functions.php

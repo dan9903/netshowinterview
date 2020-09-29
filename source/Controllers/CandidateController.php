@@ -1,11 +1,16 @@
 <?php
 namespace Source\Controllers;
 
-require __DIR__ .'/../functions/Utils.php';
 use \Source\Models\Candidate;
+use \Source\Suppport\Mailer;
 
 class CandidateController {
   private $userData = [];
+  private $mailer;
+
+  public function __construct() {
+    $this->mailer = new Mailer();
+  }
   
   public function save( $params =[] ) {
     if ($this->validateData($params)) {
@@ -18,6 +23,7 @@ class CandidateController {
         $this->userData['ipAddress']
       );
       $candidate->save();
+      $this->mailer->send($UserData);
       return true; 
     }
   }
@@ -37,6 +43,6 @@ class CandidateController {
     ];
     return true;
   }
-  
+
 }
 

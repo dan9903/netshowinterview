@@ -1,28 +1,5 @@
 https://netshowme.gupy.io/candidates/applications/39322877/test
 
-# Crie uma página de contato que contenha os seguintes campos:
-
-Nome
-[x]E-mail
-[x]Telefone
-[x]Mensagem
-[x]Arquivo Anexo
-
-## A criação dessa página deve obedecer os seguintes requisitos:
-
-[x]Os dados enviados deverão ser armazenados em um banco de dados e conter, além das informações exibidas,
-[x] o ip do remetente e <ver como o php se comporta com isso aqui>
-[x] a data e hora do envio.
-
-Os dados informados devem ser validados utilizando as seguintes regras:
-
-Todos os campos são obrigatórios;
-[x] O e-mail deve ser válido;
-[x] O telefone deve ser válido;
-[] O arquivo deve ter no máximo 500kb
-  [x] e só deve ser aceito se o arquivo for pdf, doc, docx, odt ou txt;
-  [x] O arquivo enviado deve ser armazenado em disco. Apenas o caminho do arquivo deve ser armazenado no banco de dados.
-
 [] Uma mensagem deve ser enviada com as informações submetidas no formulário para um e-mail definido em um arquivo de configuração. //PHP MAILER.
 
 [] Testes automatizados devem ser escritos para garantir que a página funciona como esperado.
@@ -33,20 +10,15 @@ Todos os campos são obrigatórios;
   Organização também é importante;
   A beleza mora nos detalhes!
 
-# Envio da resposta
-O projeto pode ser enviado de duas formas:
+#### instruções de configuração
 
-1- Através de um repositório git;
-(colar o link no campo de resposta abaixo)
+  Requisitos básicos:
+    - Composer;
 
-2- Através de um arquivo compactado no formato zip.
-(Subir o arquivo no Google Drive ou similar, e colar o link no campo de resposta abaixo);
+  Rode composer update na raiz do projeto, para instalar automaticamente as dependencias do projeto.
+  Conceda as permissões necessárias para o php guardar os arquivos no diretorio STORAGE. localizada na raiz do projeto.
+  Busque pelo arquivo 'source/config/Config.php', onde estão localizadas as constantes BASE (base da url do projeto), STORAGE (diretorio superior utilizado para guardar arquivos), constante FILE (subdiretório utilizado para guardar os arquivos) e MAIL (endereço de email utilizado para enviar os cadastros realiados no sistema;
 
-Em ambos os envios, crie um arquivo chamado README.md com instruções de configuração do seu projeto.
-
-# links úteis:
- 
- 
-	https://www.devmedia.com.br/teste-unitario-com-phpunit/41231
-  https://phpunit.readthedocs.io/pt_BR/latest/installation.html
-  https://phpunit.de/getting-started/phpunit-9.html
+  Recomendo que o projeto seja servido pelo apache, pois foi desenvolvido com foco na utilzação do mesmo.
+#### sobre o projeto 
+  O projeto foi desenvolvido com o intuito de cadastrar Candidatos a vagas de emprego, É muito simples, possui uma tela de home e uma tela de cadastro, podemos navegar tanto pelo menu superior como por rotas.
