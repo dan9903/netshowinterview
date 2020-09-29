@@ -26,7 +26,7 @@
 		</div>
 		<div class="form-group">
 			<label for="document">Arquivo</label>
-			<input type="file" class="form-control-file" id="document" name="document" accept="{{ACEPTED_FILES}}"/>
+			<input type="file" class="form-control-file" id="document" name="document" accept="{{ACCEPTED_FILES}}"/>
 		</div>
 		<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
 	</form>

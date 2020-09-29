@@ -2,14 +2,14 @@
 namespace Source\Controllers;
 
 use \Source\Models\Candidate;
-use \Source\Suppport\Mailer;
+use \Source\Support\Email;
 
 class CandidateController {
   private $userData = [];
-  private $mailer;
+  private $mail;
 
   public function __construct() {
-    $this->mailer = new Mailer();
+    $this->mailer = new Email();
   }
   
   public function save( $params =[] ) {
@@ -23,16 +23,17 @@ class CandidateController {
         $this->userData['ipAddress']
       );
       $candidate->save();
-      $this->mailer->send($UserData);
+      $this->mailer->sendMail($this->userData);
       return true; 
     }
   }
 
-  private function validatedata($params) {
+  private function validateData($params) {
     if( (!validateEmail($params['post']['email'])) ||
       (!validatePhone($params['post']['phone']))) {
         return false;
     }
+
     $this->userData = [
       'name' => sanitize($params['post']['name']),
       'email' => $params['post']['email'],
@@ -45,4 +46,3 @@ class CandidateController {
   }
 
 }
-

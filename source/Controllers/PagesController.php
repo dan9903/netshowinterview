@@ -21,7 +21,7 @@ class PagesController {
     );
 
     $twig->addGlobal('BASE', BASE);
-    $twig->addGlobal('ACCEPTED_FILES', ACCEPT_FILES);
+    $twig->addGlobal('ACCEPTED_FILES', ACCEPTED_FILES);
     echo $twig->render($view.'.twig.php', $params);
   }
 }
