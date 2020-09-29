@@ -1,10 +1,10 @@
 <?php 
-define("DATABASE", "mysql");
-define("HOST", "localhost");
-define("DBNAME", "netshowinterview");
-define("PORT", "3306");
-define("USER", "root");
-define("PASSWORD", "defcon1");
+define("DATABASE", "");
+define("HOST", "");
+define("DBNAME", "");
+define("PORT", "");
+define("USER", "");
+define("PASSWORD", "");
 define("OPTIONS", [
   PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
