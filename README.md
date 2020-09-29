@@ -1,8 +1,3 @@
-https://netshowme.gupy.io/candidates/applications/39322877/test
-
-[] Uma mensagem deve ser enviada com as informações submetidas no formulário para um e-mail definido em um arquivo de configuração. //PHP MAILER.
-
-[] Testes automatizados devem ser escritos para garantir que a página funciona como esperado.
 
 ### Observações importantes
   Utilize qualquer framework ou biblioteca disponível no composer para realizar o teste;
