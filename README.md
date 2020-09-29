@@ -17,11 +17,11 @@ Nome
 Os dados informados devem ser validados utilizando as seguintes regras:
 
 Todos os campos são obrigatórios;
-[] O e-mail deve ser válido;
-[] O telefone deve ser válido;
+[x] O e-mail deve ser válido;
+[x] O telefone deve ser válido;
 [] O arquivo deve ter no máximo 500kb
-  [] e só deve ser aceito se o arquivo for pdf, doc, docx, odt ou txt;
-  [] O arquivo enviado deve ser armazenado em disco. Apenas o caminho do arquivo deve ser armazenado no banco de dados.
+  [x] e só deve ser aceito se o arquivo for pdf, doc, docx, odt ou txt;
+  [x] O arquivo enviado deve ser armazenado em disco. Apenas o caminho do arquivo deve ser armazenado no banco de dados.
 
 [] Uma mensagem deve ser enviada com as informações submetidas no formulário para um e-mail definido em um arquivo de configuração. //PHP MAILER.
 
@@ -32,7 +32,6 @@ Todos os campos são obrigatórios;
   Utilize qualquer framework CSS e/ou JS para estruturar a página a ser exibida;
   Organização também é importante;
   A beleza mora nos detalhes!
-
 
 # Envio da resposta
 O projeto pode ser enviado de duas formas:
@@ -47,8 +46,7 @@ Em ambos os envios, crie um arquivo chamado README.md com instruções de config
 
 # links úteis:
  
-  https://www.codexworld.com/how-to/get-user-ip-address-php/
+ 
 	https://www.devmedia.com.br/teste-unitario-com-phpunit/41231
-  https://www.positronx.io/create-simple-php-crud-rest-api-with-mysql-php-pdo/
   https://phpunit.readthedocs.io/pt_BR/latest/installation.html
   https://phpunit.de/getting-started/phpunit-9.html

@@ -1,15 +1,14 @@
 # meu proximo todo:
 
-[] criar uma classe model abstrata, para fazer os acessos ao banco de dados;
+[x] criar uma classe model abstrata, para fazer os acessos ao banco de dados;
 [] 
 
 
 
 # tests
 
-[] should be test save;
-[] should be test email validation;
-[] should be test ip from sender;
-[] should be test file input;
-[] should be test phone mask;
-[] should be test mojang
+[x] should be test save;
+[x] should be test email validation;
+[x] should be test ip from sender;
+[x] should be test file input;
+[x] should be test phone mask;

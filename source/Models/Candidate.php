@@ -14,7 +14,8 @@ class Candidate extends Model {
   private $ipAddress;
   private $createdAt;
   
-  public function __construct($name, $email, $phone, $message, $document, $ipAddress) {
+  public function __construct($name, $email, $phone, $message, $document, $ipAddress, $id=null) {
+    $this->id = $id;
     $this->name = $name;
     $this->email = $email;
     $this->phone = $phone;
@@ -25,7 +26,7 @@ class Candidate extends Model {
   }
 
   public function save() {
-    if(!$id) {
+    if(!$this->id) {
       $values = [
         'name'=>$this->name,
         'email'=>$this->email,
@@ -35,8 +36,7 @@ class Candidate extends Model {
         'ipAddress' => $this->ipAddress
       ];
       return $this->insert($values);
-    }
-   
+    } 
   }
 
   public function find() {

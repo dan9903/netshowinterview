@@ -2,18 +2,25 @@
 
 namespace Source\Controllers;
 
-use Source\Core\Controller;
 
-class PagesController extends Controller
-{
-    public function home()
-    {
-        $this->load('home/main');
-    }
+class PagesController {
+  
+  public function home()
+  {
+    $this->load('home/main');
+  }
 
-    public function cadastro()
-    {
-        $this->load('cadastro/main');
-    }
-    
+  public function cadastro()
+  {
+    $this->load('cadastro/main');
+  }
+
+  protected function load(string $view, $params = []) {
+    $twig = new \Twig\Environment(
+      new \Twig\Loader\FilesystemLoader('../source/Views')
+    );
+
+    $twig->addGlobal('BASE', BASE);
+    echo $twig->render($view.'.twig.php', $params);
+  }
 }

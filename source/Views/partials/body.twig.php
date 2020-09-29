@@ -17,5 +17,8 @@
 
     {% block body %}{% endblock %}
 </body>
-
+<script src="{{BASE}}vendor/romulobrasil/puremask.min.js"></script>
+<script type="text/javascript">
+    PureMask.format(".phone", true);
+</script>
 </html>
