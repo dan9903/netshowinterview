@@ -1,4 +1,4 @@
-vendor
+/vendor
 mariaLocal.session.sql
 .vscode
 test.http
